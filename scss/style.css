@@ -112,7 +112,8 @@ header {
     padding: 25px;
     box-shadow: 0px 2px 0px 0px #ccc; }
   .bottom .input-group-addon {
-    box-shadow: 0px 2px 0px 0px #ccc; }
+    box-shadow: 0px 2px 0px 0px #ccc;
+    font-weight: 600; }
   .bottom .input-group-addon:hover {
     cursor: pointer;
     background: #ddd; }
@@ -126,6 +127,9 @@ footer {
     border-radius: 100%;
     color: #fff;
     margin: 10px; }
+    footer i:hover {
+      opacity: 0.9;
+      cursor: pointer; }
   footer .fa {
     font-size: 18px; }
   footer .fa-github {
@@ -146,6 +150,65 @@ footer {
       color: #b84d45; }
       footer p a:hover {
         color: #a5453e; }
+
+.modal-dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100%; }
+
+.modal-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  box-shadow: none;
+  border-radius: 0;
+  background-clip: border-box;
+  border: none; }
+
+.modal-body .close-modal {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  top: 25px;
+  right: 25px;
+  cursor: pointer; }
+  .modal-body .close-modal:hover {
+    background: #eee;
+    opacity: 0.9; }
+.modal-body .lr {
+  height: 75px;
+  width: 1px;
+  margin-left: 35px;
+  background: #b84d45;
+  transform: rotate(45deg); }
+.modal-body .rl {
+  height: 75px;
+  width: 1px;
+  background: #b84d45;
+  transform: rotate(90deg); }
+.modal-body form {
+  margin-top: 100px; }
+.modal-body input {
+  border: none;
+  font-size: 40px;
+  font-weight: 100;
+  box-shadow: 0 2px 0 0 #eee;
+  padding: 30px 12px; }
+  .modal-body input:focus {
+    box-shadow: 0 2px 0 0 #eee; }
+.modal-body .input-group-btn .btn {
+  border: none;
+  background: none;
+  font-size: 40px;
+  font-weight: 100; }
+  .modal-body .input-group-btn .btn:hover {
+    color: #333; }
 
 @media (min-width: 320px) {
   .brand {
